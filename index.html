@@ -13,20 +13,21 @@
      crossorigin="anonymous"></script>
 </head>
 <body>
+
     <header>
-        <div class="container">
-            <a href="index.html">
-                <img src="img/logoremove.png" class="logo">
-            </a>
+
+        <a href="#" class="logo">
+                <img src="img/nuevologodrogmedic.jpeg">
+        </a>
+
             <nav>
-                <a href="#inicio">Inicio</a>
-                <a href="#nosotros">Nosotros</a>
-                <a href="#servicios">Servicios</a>
-                <a href="#productos">Productos</a>
-                <a href="#contactenos">Contáctenos</a>
+                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#nosotros" class="nav-link">Nosotros</a>
+                <a href="#servicios" class="nav-link">Servicios</a>
+                <a href="#productos" class="nav-link">Productos</a>
+                <a href="#contactenos" class="nav-link">Contáctenos</a>
             </nav>
 
-        </div>
     </header>
     <main>
         <section id="inicio">
@@ -47,17 +48,45 @@
                 </p>
             </div>
         </section>
-        <section id="servicios" class="seccion">
+
+        <section id="servicios">
             <div class="container bloque-servicio">
-                <img class="imagen" src="img/descuentos2.jpg" alt="Descuentos">
-                <a href="#nosotros" class="boton boton-azul">Rebajas</a>
-                <img class="imagen" src="img/productodia.png" alt="Productodehoy">
-                <a href="#nosotros" class="boton boton-azul">Producto de hoy</a>
-                <img class="imagen" src="img/medic.png" alt="Atención">
-                <a href="#nosotros" class="boton boton-azul">Atención 24/7</a>
+               <div class="card">
+                <figure>
+                    <img src="img/descuentosdos.jpg" alt="Descuentos">
+                </figure>
+                <div class="contenido">
+                    <h2>Descuentos</h2>
+                    <p>Todos los días, tenemos ofertas <br>
+                    disponibles para ti. </p>
+                </div>
+               </div>
             </div>
-            <br>
-            <br>
+            <a href="#" >Disponible Aquí</a>
+            <div class="card">
+                <figure>
+                    <img src="img/medico24h.jpg" alt="Médicos">
+                </figure>
+                <div class="contenido">
+                    <h2>Atención Médica</h2>
+                    <p>Siempre disponibles para ti</p>
+                </div>
+               </div>
+            </div>
+            <a href="#">Solicita tu cita</a>
+            <div class="card">
+                <figure>
+                    <img src="img/enfermera24h.jpg" alt="Enfermeras">
+                </figure>
+                <div class="contenido">
+                    <h2>Enfermería a Domicilio</h2>
+                    <p>Servicio 24/7</p>
+                </div>
+               </div>
+            </div>
+            <a href="#">Servicio Aquí</a>
+        </section>    
+           
             <section id="productos" class="seccion">
                 <div class="container bloque-productos">
                     <img class="atencion" src="img/medicgrade.jpg" width="350px" alt="Medicina Adultos">
@@ -80,7 +109,6 @@
                 </div>
             </section>
                    
-        </section>
         <section id="contactenos">
             <iframe width="520" height="400" frameborder="0" id="gmap_canvas" 
             src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20medellin+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
