@@ -32,7 +32,7 @@ header .logo {
   gap: .5rem;
 }
 
-/* MENU HIDDEN THAT WILL SHOW UP ON RESPONSIVE SCREEN */
+/* 
 
 .lateral-menu {
   position: fixed;
@@ -80,10 +80,9 @@ header .logo {
   margin-bottom: 30px;
   margin-top: 40px;
 }
+*/
 
-section {
-  margin: 120px 300px;
-}
+
 
 .product {
   display: flex;
