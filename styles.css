@@ -1,3 +1,4 @@
+/* margin: 0 y padding: 0 se deben de aplicar es al body porque si se aplican a toda la web va a afectar párrafos, botones, input y todo lo demás lo que causaría que haya que poner estilos específicos en todos ellos */
 *
 {
     margin: 0;
@@ -7,6 +8,7 @@
     box-sizing: border-box;
 }
 
+/* Una buena práctica en el documento de Styles general es poner los estilos en orden categórico siendo asterisco primero porque va a dar estilos a todo en el documento, luego sigue el body que es todo lo que se ve, luego sigue el header que es lo que está en la parte de arruiba, luego la etiqueta <a> y así sucesivamente */
 a
 {
     text-decoration: none;  
@@ -47,6 +49,7 @@ nav a
     padding-right: 10px;
 }
 
+/* Este color afecta la interfaz de usuario porque cuando se hace hover reduce la legibilidad del texto */
 nav a:hover
 {
     color: #52aa5e;
