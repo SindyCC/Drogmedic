@@ -1,94 +1,109 @@
 /* margin: 0 y padding: 0 se deben de aplicar es al body porque si se aplican a toda la web va a afectar párrafos, botones, input y todo lo demás lo que causaría que haya que poner estilos específicos en todos ellos */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root
+{
+    --primary-color: #3aaed8;
+    --background-color: #2bd9fe;
+    --darck-color: #151515;
+}
+
+html
+{
+    font-size: 62.5%;
+    font-family: 'Poppins' sans-serif;
+}
+
 *
 {
     margin: 0;
     padding: 0;
-    text-decoration: none;
-    list-style: none;
     box-sizing: border-box;
 }
 
-/* Una buena práctica en el documento de Styles general es poner los estilos en orden categórico siendo asterisco primero porque va a dar estilos a todo en el documento, luego sigue el body que es todo lo que se ve, luego sigue el header que es lo que está en la parte de arruiba, luego la etiqueta <a> y así sucesivamente */
 a
 {
-    text-decoration: none;  
+    max-width: 120rem;
+    margin: 0 auto;
 }
 
-body
+.container-hero
 {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
+    background-color: var(--background-color);
 }
 
-header
+.hero 
 {
     display: flex;
     justify-content: space-between;
-    min-height: 70px;
-    background-color: #3aaed8;
     align-items: center;
-    padding: 10px;
+    padding: 2rem 0;
 }
 
-.logo
+.customer-support
 {
     display: flex;
     align-items: center;
+    gap: 2rem;
 }
 
-.logo img
+.customer-support i
 {
-    height: 70px;
-    border-radius: 10px 20px 10px 20px;
+    font-size: 3.3rem;
 }
 
-nav a
+.content-customer-support
 {
-    color: white;
-    font-weight: 600;
-    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Este color afecta la interfaz de usuario porque cuando se hace hover reduce la legibilidad del texto */
+.container-logo
+{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
 nav a:hover
 {
-    color: #52aa5e;
+    font-size: 3rem;
 }
 
-#inicio .contenido-banner img
+.container-logo h1 a
 {
-    width: 1351px;
+    text-decoration: none;
+    color: #000;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: -1px;
 }
 
-
-
-
-#productos img 
+.container-user
 {
-    width: 320px;
-    margin-left: 15px;
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
 }
 
-
-
-
-
-
-@media (max-width: 700px)
+.container-user .fa-user
 {
-    header
-    {
-        flex-direction: column;
-    }
+    font-size: 3rem;
+    color: #388659;
+    padding-right: 2,5rem;
+    border-right: 1px solid #e2e2e2;
+}
 
-    nav
-    {
-        padding: 10px 0px;
-    }
+.container-user .fa-basket-shopping
+{
+    font-size: 3rem;
+    color: #388659;
+    padding-left: -1rem;
+}
 
-
-
-
-
-
+.content-shopping-cart
+{
+    display: flex;
+    flex-direction: column;
 }
