@@ -219,3 +219,17 @@ form .btn-search
     color: #fff;
 }
 
+.banner
+{
+    background-image: url(img/bannerdrog.jpg);
+    height: 60rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.content-banner
+{
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 25rem 0;
+}
