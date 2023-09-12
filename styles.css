@@ -80,6 +80,11 @@ nav a:hover
     letter-spacing: -1px;
 }
 
+.container-logo .fa-house-medical
+{
+    font-size: 3rem;
+}
+
 .container-user
 {
     display: flex;
