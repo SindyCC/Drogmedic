@@ -13,8 +13,6 @@ html
     font-family: 'Poppins' sans-serif;
 }
 
-/* margin: 0 y padding: 0 se deben de aplicar es al body porque si se aplican a toda la web va a afectar párrafos, botones, input y todo lo demás lo que causaría que haya que poner estilos específicos en todos ellos */
-
 *
 {
     margin: 0;
@@ -299,42 +297,3 @@ form .btn-search
     height: 100%;
     padding: 1rem;
 }
-
-.container-services
-{
-    display: flex;
-    column-gap: 3;
-}
-
-.top-services .heading-1
-{
-    font-size: 4rem;
-    text-align: center;
-}
-
-.img-services1
-{
-    max-width: 30%;
-    height: auto;
-    
-}
-
-.img-services
-{
-    height: 60%;
-    
-}
-
-.top-services p
-{
-    font-size: 2.5rem;
-}
-
-.top-services a
-{
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: #151515;
-}
-
-
