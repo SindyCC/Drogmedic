@@ -146,6 +146,11 @@ nav a:hover
     list-style: none;
 }
 
+.menu li a
+{
+    text-decoration: none;
+}
+
 
 .menu ::after
 {
