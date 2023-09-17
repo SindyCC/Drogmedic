@@ -174,7 +174,7 @@ nav a:hover
     opacity: 1;
 }
 
-.menu li a:hover
+.menu li:hover
 {
     color: #fff;
 }
@@ -338,5 +338,11 @@ form .btn-search
     color: #151515;
 }
 
-
+@media screen and (min-width: 767px)
+{
+    .container-hero
+    {
+        padding: 4rem 0;
+    }
+}
 
