@@ -3,9 +3,105 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="cart.css">
+  <link rel="shorcut icon" href="img/drogdosicon.png">
+  <link rel="stylesheet" href="css/necolas.github.io_normalize.css_8.0.1_normalize.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   <title>Carrito de compras</title>
 </head>
 <body>
-  <h1>This is the cart</h1>
+  <header>
+      <div class="container-hero">
+          <div class="container hero">
+              <div class="customer-support">
+                  <i class="fa-solid fa-headset"></i>
+                  <div class="content-customer-support">
+                      <span class="text">Soporte al Cliente</span>
+                      <span class="number">123-456-7890</span>
+                  </div>
+              </div>
+              <div class="container-logo">
+                  <i class="fa-solid fa-house-medical"></i>
+                  <h1><a href="/">DROGMEDIC</a></h1>
+              </div>
+              <div class="container-user">
+                  <i class="fa-solid fa-user"></i>
+                  <i class="fa-solid fa-basket-shopping"></i>
+                  <div class="content-shopping-cart">
+                      <span class="text">Carrito</span>
+                      <span class="number">(0)</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="container-navbar">
+          <nav class="navbar container">
+              <i class="fa-solid fa-bars"></i>
+              <ul class="menu">
+                  <li><a href="index.html">Inicio</a></li>
+                  <li><a href="nosotros.html">Nosotros</a></li>
+                  <li><a href="#">Servicios</a></li>
+                  <li><a href="productos.html">Productos</a></li>
+                  <li><a href="#">Ofertas</a></li>
+                  <li><a href="#">Blog</a></li>
+              </ul>
+
+  <!--<<<<<< HEAD -->
+        <!-- <nav>
+              <a href="#inicio" class="nav-link">Inicio</a>
+              <a href="#nosotros" class="nav-link">Nosotros</a>
+              <a href="#servicios" class="nav-link">Servicios</a>
+              <a href=productos.html class="nav-link" target="_blank">Productos</a>
+              <a href="#contactenos" class="nav-link">Contáctenos</a>-->
+  <!--  ======= -->
+              <form class="search-form">
+                  <input type="search" placeholder="Buscar..." />
+                  <button class="btn-search">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+              </form>
+  <!-- >>>>>>> 2b1e5b0ef37515210845b5199790c0fc9a38b03d -->
+          </nav>
+      </div>
+  </header>
+
+  <h1>Carrito de compras</h1>
+
+  <div class="articles js-articles-container">
+    <div>
+      <p>Articulo</p>
+      <p>Precio</p>
+      <p>Cantidad</p>
+      <p>Subtotal</p>
+    </div>
+    <div>
+      <img class="product-img" src="img/products_images/advil.jpg" alt="">
+      <div>$359.000</div>
+      <input type="number">
+      <div>$359.000</div>
+    </div>
+    <div>Trash Icon</div>
+  </div>
+  <div class="summary js-summary-container">
+    <p>Resumen</p>
+    <p>Subtotal $301.680,67</p>
+    <p>Impuestos $57.319,33</p>
+    <p>Total del pedido $359.000,00</p>
+    <button>SIGUIENTE PASO</button>
+  </div>
+
+  <div class="product-container">
+    <img class="product-img" src="img/products_images/advil.jpg" alt="">
+    <div class="product-details">
+      <div class="product-name">Product</div>
+      <div class="product-price">$99.990</div>
+      <div class="product-icons">
+        <img src="img/icons/heart-svgrepo-com.svg" alt="">
+        <img src="img/icons/magnifying-glass-svgrepo-com.svg" alt="">
+      </div>
+      <div class="add-to-cart-button">comprar</div>
+    </div>
+  </div>
 </body>
 </html>
