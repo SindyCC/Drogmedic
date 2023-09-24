@@ -354,9 +354,15 @@ form .btn-search
 */
 
 
+.products-grid {
+  display: grid;
+  grid-template-columns: 220px 220px 220px;
+  column-gap: 24px;
+  row-gap: 40px;
+  margin-top: 40px;
+}
 
-.product {
-  margin: 120px 120px;
+.product-container {
   display: flex;
   width: 200px;
   flex-direction: column;
@@ -369,7 +375,7 @@ form .btn-search
   position: relative;
 }
 
-.product:hover {
+.product-container:hover {
   transform: scale(1.05);
   box-shadow: 3px 6px 14px rgba(0, 0, 0, 0.18);
 } 
