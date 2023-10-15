@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="cart.css">
-  <link rel="stylesheet" href="css/product-layout.css">
+  
   <link rel="stylesheet" href="site-styles.css">
   <link rel="shorcut icon" href="img/drogdosicon.png">
   <link rel="stylesheet" href="css/necolas.github.io_normalize.css_8.0.1_normalize.css">
@@ -71,31 +71,34 @@
   <h1>Carrito de compras</h1>
   
   <div class="purchase-details">
-    <div class="articles-container js-articles-container">
-      <div>
-        <img class="product-img" src="img/products_images/advil.jpg" alt="">
-        <div>$359.000</div>
-      </div>
-      <div>
-        <p>Articulo</p>
-        <p>Precio</p>
-        <p>Cantidad</p>
-        <p>Subtotal</p>
-      </div>
-      <div>x</div>
-    </div>
-  
     <div class="summary js-summary-container">
-      <p>Resumen</p>
-      <p>Subtotal $301.680,67</p>
-      <p>Impuestos $57.319,33</p>
-      <p>Total del pedido $359.000,00</p>
+      <h2>Resumen</h2>
+      <div class="summary-grid">
+        <div class="concept">
+          <p>Subtotal:</p>
+          <p>Total del pedido:</p>
+        </div>
+        <div class="concept-amount">
+          <p>$359.000</p>
+          <p>$359.000</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="articles-container js-articles-container">
+      <img class="product-img" src="img/products_images/advil.jpg" alt="">
+      <div>
+        <p>Articulo: Advil</p>
+        <p>Precio: $359.000</p>
+        <p>Cantidad: 1</p>
+        <p>Subtotal: $359.000</p>
+      </div>
     </div>
   </div>
 
   <div class="go-to-checkout js-go-to-checkout">
-    <div>total: $999.999</div>
-    <button class="checkout-button js-checkout-button">pagar</button>
+    <div>total: $359.000</div>
+    <button class="checkout-button js-checkout-button">Ir a pagar</button>
   </div>
 </body>
 </html>
