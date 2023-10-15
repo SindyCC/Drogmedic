@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="cart.css">
+  <link rel="stylesheet" href="css/cart.css">
   
-  <link rel="stylesheet" href="site-styles.css">
+  <link rel="stylesheet" href="css/site-styles.css">
   <link rel="shorcut icon" href="img/drogdosicon.png">
   <link rel="stylesheet" href="css/necolas.github.io_normalize.css_8.0.1_normalize.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -71,6 +71,20 @@
   <h1>Carrito de compras</h1>
   
   <div class="purchase-details">
+
+    <div class="articles-container js-articles-container">
+      <img class="product-img" src="img/products_images/advil.jpg" alt="">
+      <div>
+        <h2>Advil Clasico</h2>
+        <p>Precio: $359.000</p>
+        <div class="quantity-selector">
+          <p>Cantidad: 1</p>
+          <input type="number" placeholder="1">
+        </div>
+        <p>Subtotal: $359.000</p>
+      </div>
+    </div>
+
     <div class="summary js-summary-container">
       <h2>Resumen</h2>
       <div class="summary-grid">
@@ -84,16 +98,8 @@
         </div>
       </div>
     </div>
-
-    <div class="articles-container js-articles-container">
-      <img class="product-img" src="img/products_images/advil.jpg" alt="">
-      <div>
-        <p>Articulo: Advil</p>
-        <p>Precio: $359.000</p>
-        <p>Cantidad: 1</p>
-        <p>Subtotal: $359.000</p>
-      </div>
-    </div>
+  
+    
   </div>
 
   <div class="go-to-checkout js-go-to-checkout">

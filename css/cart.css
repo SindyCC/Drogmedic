@@ -17,12 +17,29 @@ body {
   margin: 10px;
   align-items: center;
   border-radius: 10px;
+  border: .5px solid rgba(0, 0, 0, .15);
+  box-shadow: 0 0 6px rgba(0, 0, 0, .05);
+}
+
+.articles-container h2 {
+  margin-bottom: 18px;
+}
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  margin: 6px 0;
+}
+.quantity-selector input {
+  width: 36px;
 }
 
 .summary {
   background-color: white;
   padding: 30px 60px;
   border-radius: 10px;
+  border: .5px solid rgba(0, 0, 0, .15);
+  box-shadow: 0 0 6px rgba(0, 0, 0, .05);
 }
 
 .summary-grid {
@@ -41,17 +58,17 @@ body {
 
 @media screen and (max-width: 1080px) {
   .purchase-details {
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: space-between;
   }
   .articles-container {
     flex-direction: row;
-    box-shadow: 0 0 6px rgba(0, 0, 0, .05);
+    margin-bottom: -1px;
+    
   }
   .summary {
     margin-bottom: 20px;
     align-self: center;
-    box-shadow: 0 0 6px rgba(0, 0, 0, .05);
   }
 }
 
