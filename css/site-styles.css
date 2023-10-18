@@ -18,6 +18,53 @@ header {
   justify-content: space-evenly;
   border-bottom: .5px solid rgba(0, 0, 0, .08);
   padding: 20px;
+  align-items: center;
+}
+
+.top-menu div a {
+  text-decoration: none;
+  color: black;
+}
+
+.account-icon img {
+  width: 36px;
+  cursor: pointer;
+}
+
+.cart-icon {
+  position: relative;
+}
+
+.cart-icon img {
+  width: 42px;
+  cursor: pointer;
+}
+
+.cart-count {
+  background-color: rgb(216, 184, 0);
+  color: white;
+  font-size: 14px;
+  border-radius: 10px;
+  width: 16px;
+  text-align: center;
+  padding: 2px;
+  position: absolute;
+  top: -4px;
+  right: -6px;
+}
+
+.main-menu {
+  transition: background-color .3s, color .3s;
+  background-color: rgb(212, 240, 254);
+}
+
+.main-menu-entries {
+  cursor: pointer;
+}
+
+.main-menu:hover {
+  background-color: rgb(0, 174, 255);
+  color: white;
 }
 
 ul {
