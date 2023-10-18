@@ -1,7 +1,12 @@
+body {
+  padding-bottom: 200px;
+  background-color: rgb(251, 250, 250);
+}
+
 .products-grid {
   display: grid;
   grid-template-columns: 220px 220px 220px;
-  column-gap: 40px;
+  column-gap: 100px;
   row-gap: 40px;
   margin-top: 40px;
 }
