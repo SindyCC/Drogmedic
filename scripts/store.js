@@ -12,7 +12,8 @@ products.forEach((product) => {
           <img src="img/icons/heart-svgrepo-com.svg" alt="">
           <img src="img/icons/magnifying-glass-svgrepo-com.svg" alt="">
         </div>
-        <div class="add-to-cart-button">comprar</div>
+        <div class="add-to-cart-button js-add-to-cart-button"
+        data-product-id="${product.id}">comprar</div>
       </div>
     </div>
   `;
@@ -24,4 +25,28 @@ document.querySelector('.js-products-grid').innerHTML = productsHTML;
 
 // 3) MAKE IT INTERACTIVE
 
-console.log('Hello World');
+document.querySelectorAll('.js-add-to-cart-button')
+  .forEach((button) => {
+    button.addEventListener('click', () => {
+      const productId = button.dataset.productId;
+
+      let matchingItem;
+
+      cart.forEach((item) => {
+        if (productId === item.productId) {
+          matchingItem = item;
+        }
+      });
+
+      if (matchingItem) {
+        matchingItem.quantity ++;
+      } else {
+        cart.push({
+          productId: productId,
+          quantity: 1
+        });
+      }
+
+      console.log(cart);
+    });
+  });
