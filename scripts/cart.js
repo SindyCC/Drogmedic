@@ -1,6 +1,16 @@
+import { products } from "./products.js";
+
+let cartSummaryHTML = '';
+
 console.log('Hello cart');
 
-export const cart = [];
+export const cart = [{
+  productId: '1-first-product',
+  quantity: 1
+}, {
+  productId: '2-second-product',
+  quantity: 1
+}];
 
 export function addToCart(productId) {
   let matchingItem;
@@ -21,23 +31,41 @@ export function addToCart(productId) {
   }
 }
 
+cart.forEach((cartItem) => {
+  const productId = cartItem.productId;
+
+  let matchingProduct;
+
+  products.forEach((product) => {
+    if (product.id === productId) {
+      matchingProduct = product;
+    }
+  });
+
+  cartSummaryHTML += `
+    <div class="articles-container js-articles-container">
+      <img class="product-img" src="${matchingProduct.image}" alt="">
+      <div>
+        <h2>${matchingProduct.name}</h2>
+        <p>Precio: $${matchingProduct.price}</p>
+        <div class="quantity-selector">
+          <p>Cantidad: ${cartItem.quantity}</p>
+          <input type="number" placeholder="1">
+        </div>
+        <p>Subtotal: $${matchingProduct.price}</p>
+      </div>
+    </div>
+  `;
+});
+
+document.querySelector('.js-purchase-details').innerHTML = cartSummaryHTML;
+
 /*
 const cartDetails = 
 `
   <div class="purchase-details">
 
-    <div class="articles-container js-articles-container">
-      <img class="product-img" src="img/products_images/advil.jpg" alt="">
-      <div>
-        <h2>Advil Clasico</h2>
-        <p>Precio: $359.000</p>
-        <div class="quantity-selector">
-          <p>Cantidad: 1</p>
-          <input type="number" placeholder="1">
-        </div>
-        <p>Subtotal: $359.000</p>
-      </div>
-    </div>
+    
 
     <div class="summary js-summary-container">
       <h2>Resumen de la compra</h2>
