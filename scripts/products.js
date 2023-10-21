@@ -1,7 +1,7 @@
 // 1) SAVE THE DATA
 console.log('Hello product');
 
-const products = [{
+export const products = [{
   id: "1-first-product",
   image:  'img/products_images/advil.jpg',
   name: 'Advil',
