@@ -35,47 +35,50 @@
     
   </header>
 
-  <h1>Carrito de compras</h1>
-  <div class="purchase-details js-purchase-details"></div>
-  
-  <div class="summary js-summary-container">
-    <h2>Resumen de la compra</h2>
-    <div class="summary-grid">
-      <div class="concept">
-        <p>1 producto:</p>
-        <p>Domicilio:</p>
-        <p>Total:</p>
-      </div>
-      <div class="concept-amount">
-        <p>$359.000</p>
-        <p>$0</p>
-        <p>$359.000</p>
+  <h1 style="margin: 0;">Carrito de compras</h1>
+
+  <!-- <div class="purchase-details js-purchase-details"></div> -->
+  <div class="purchase-details">
+    <div class="articles-container js-articles-container">
+      <div class="single-article">
+        <img class="product-img" src="img/products_images/advil.jpg" alt="">
+        <div>
+          <h2>Advil Clasico</h2>
+          <p>Precio: $359.000</p>
+          <div class="quantity-selector">
+            <p>Cantidad: 1</p>
+            <input type="number" placeholder="1">
+          </div>
+          <p>Subtotal: $359.000</p>
+        </div>
       </div>
     </div>
-  </div> 
+    <div class="summary js-summary-container">
+      <h2>Resumen de la compra</h2>
+      <div class="summary-grid">
+        <div class="concept">
+          <p>1 producto:</p>
+          <p>Domicilio:</p>
+          <p>Total:</p>
+        </div>
+        <div class="concept-amount">
+          <p>$359.000</p>
+          <p>$0</p>
+          <p>$359.000</p>
+        </div>
+      </div>
+    </div> 
+  </div>
+  
   
   <!-- 
-    <div class="articles-container js-articles-container">
-      <img class="product-img" src="img/products_images/advil.jpg" alt="">
-      <div>
-        <h2>Advil Clasico</h2>
-        <p>Precio: $359.000</p>
-        <div class="quantity-selector">
-          <p>Cantidad: 1</p>
-          <input type="number" placeholder="1">
-        </div>
-        <p>Subtotal: $359.000</p>
-      </div>
-    </div>
-
-    
-   -->
-  
-
-  <div class="go-to-checkout js-go-to-checkout">
+    <div class="go-to-checkout js-go-to-checkout">
     <div>total: $359.000</div>
     <button class="checkout-button js-checkout-button">Ir a pagar</button>
   </div>
+  ESTE ES EL BOTÓN DE IR A PAGAR, LO QUITÉ TEMPORALMENTE PARA TENER TODA LA VISUAL DE LA PÁGINA, ME ESTABA REDUCIENDO LA VISIBILIDA PORQUE TIENE UNA PROPIEDAD DE POSITION:FIXED
+   -->
+  
 
   <script type="module" src="scripts/cart.js"></script>
 </body>
