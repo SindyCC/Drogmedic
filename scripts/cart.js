@@ -2,13 +2,13 @@ import { products } from "./products.js";
 
 let cartSummaryHTML = '';
 
-console.log('Hello cart');
+console.log('Cart script');
 
 export const cart = [{
   productId: '1-first-product',
   quantity: 1
 }, {
-  productId: '2-second-product',
+  productId: '2-second-product', 
   quantity: 1
 }];
 
@@ -86,3 +86,5 @@ const cartDetails =
 `
 
 */
+
+// Primero organizar el Layout del cart

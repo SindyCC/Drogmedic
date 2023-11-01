@@ -1,5 +1,5 @@
 // 1) SAVE THE DATA
-console.log('Hello product');
+console.log('Products script');
 
 export const products = [{
   id: "1-first-product",

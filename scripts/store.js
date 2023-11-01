@@ -1,4 +1,3 @@
-import { cart, addToCart } from './cart.js';
 import { products } from './products.js';
 
 let productsHTML = '';
@@ -44,3 +43,5 @@ document.querySelectorAll('.js-add-to-cart-button')
       updateCartQuantity();
     });
   });
+
+  // Organizar el layout de products para que sera responsive Y estétio

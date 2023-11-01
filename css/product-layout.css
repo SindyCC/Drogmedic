@@ -1,6 +1,6 @@
 .product-container {
   display: flex;
-  width: 200px;
+  width: 180px;
   flex-direction: column;
   align-items: center;
   box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.15);
@@ -9,7 +9,6 @@
   padding: 20px 20px 38px;
   transition: transform 0.2s ease;
   position: relative;
-  margin-left: 40px;
 }
 
 .product-container:hover {
@@ -35,19 +34,20 @@
 
 .product-name {
   font-size: 20px;
-  font-weight: bold;
   margin-bottom: 8px;
 }
+
 .product-price {
   margin-bottom: 8px;
-  font-weight: 600;
 }
+
 .product-icons {
   margin-bottom: 16px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 20px;  
 }
+
 .product-icons img {
   width: 40px;
   cursor: pointer;
