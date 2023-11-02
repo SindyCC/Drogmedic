@@ -9,7 +9,7 @@ export const cart = [{
   quantity: 1
 }, {
   productId: '2-second-product', 
-  quantity: 1
+  quantity: 3
 }];
 
 export function addToCart(productId) {
@@ -43,7 +43,7 @@ cart.forEach((cartItem) => {
   });
 
   cartSummaryHTML += `
-    <div class="articles-container js-articles-container">
+    <div class="single-article">
       <img class="product-img" src="${matchingProduct.image}" alt="">
       <div>
         <h2>${matchingProduct.name}</h2>
@@ -58,33 +58,4 @@ cart.forEach((cartItem) => {
   `;
 });
 
-document.querySelector('.js-purchase-details').innerHTML = cartSummaryHTML;
-
-/*
-const cartDetails = 
-`
-  <div class="purchase-details">
-
-    
-
-    <div class="summary js-summary-container">
-      <h2>Resumen de la compra</h2>
-      <div class="summary-grid">
-        <div class="concept">
-          <p>1 producto:</p>
-          <p>Domicilio:</p>
-          <p>Total:</p>
-        </div>
-        <div class="concept-amount">
-          <p>$359.000</p>
-          <p>$0</p>
-          <p>$359.000</p>
-        </div>
-      </div>
-    </div>    
-  </div>
-`
-
-*/
-
-// Primero organizar el Layout del cart
+document.querySelector('.js-articles-container').innerHTML = cartSummaryHTML;
