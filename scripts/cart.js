@@ -57,5 +57,3 @@ cart.forEach((cartItem) => {
     </div>
   `;
 });
-
-document.querySelector('.js-articles-container').innerHTML = cartSummaryHTML;
