@@ -3,7 +3,7 @@ console.log('Products script');
 
 export const products = [{
   id: "1-first-product",
-  image:  'img/products_images/advil.jpg',
+  image: 'img/products_images/advil.jpg',
   name: 'Advil',
   price: 33350
 }, {

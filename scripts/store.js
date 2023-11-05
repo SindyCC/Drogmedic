@@ -1,5 +1,6 @@
 import { products } from './products.js';
-import { cart } from './cart.js';
+import { cart, addToCart } from './cart.js';
+// After I imported the function Add to cart from cart.js the cart page stopped working, it seems it is not taking the array
 
 
 let productsHTML = '';
@@ -45,5 +46,3 @@ document.querySelectorAll('.js-add-to-cart-button')
       updateCartQuantity();
     });
   });
-
-  // Organizar el layout de products para que sera responsive Y estétio
